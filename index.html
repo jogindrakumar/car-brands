@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet" />
     <title>Car Brands</title>
 </head>
 
@@ -22,11 +25,32 @@
 
     <main>
         <section class="jumbo-slider">
-            <div class="jumbo-slider__container"></div>
+            <ul class="jumbo-slider__container">
+                <li class="jumbo-slider__slide" attr="1">
+                    <!-- jumbo-slider__slide--active -->
+                    <div class="jumbo-slider__slide-bg" style="
+                background: url('https://www.mercedes-benz.com/content/dam/brandhub/mbsocialcar/mbsocialcar-mercedes-amg-gt-r/Mercedes-AMG-GT-R-Wallpaper-01.zip_extracted/01-mercedes-amg-gt-r-c-190-wallpaper-3840x2160.jpg');
+              "></div>
+                    <div class="container">
+                        <div class="jumbo-slider__info">
+                            <div class="jumbo-slider__slide-number">01</div>
+                            <div class="jumbo-slider__title">
+                                Born to perform, developed to outperform
+                            </div>
+                            <p class="jumbo-slider__description">
+                                As a pioneer of the automobile, we seek innovations which provide for pleasant, safe and resource-friendly mobility, day in, day out. Discover our visionary ideas for vehicles, mobility concepts, e-mobility and digital networking of the future – as well
+                                as the solutions with which we are already shaping the present. With the CASE strategy, Daimler focuses on the four major trends influencing future mobility – Connected, Autonomous, Shared & Services and Electric. And Daimler
+                                is already making great progress in all of these fields to shape the future of mobility. Each of the four CASE fields in itself already changes mobility fundamentally; however, the revolutionary potential only becomes apparent
+                                when the CASE fields are combined.
+                            </p>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
             <div class="jumbo-slider__nav">
-                <a href="" class="jumbo-slider__link jumbo-slider__link--active">01 AMT GT</a
-          >
-          <a href="" class="jumbo-slider__link">02 Maybach GLS</a>
+                <a href="" class="jumbo-slider__link jumbo-slider__link--active">01 AMT GT</a>
+                <a href="" class="jumbo-slider__link">02 Maybach GLS</a>
                 <a href="" class="jumbo-slider__link">03 AMG G-wagan</a>
             </div>
             <div class="jumbo-slider__elipsis">
