@@ -19,6 +19,8 @@
     height: 100vh;
     width: 100%;
     background-color: #1b1b1b;
+    position: relative;
+    overflow: hidden;
 }
 
 .jumbo-slider__container {
@@ -29,6 +31,7 @@
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    height: 100%;
 }
 
 .jumbo-slider__slide {
@@ -47,6 +50,12 @@
     filter: saturate(0);
     position: absolute;
     z-index: 1;
+}
+
+.jumbo-slider__video-player {
+    width: 100%;
+    height: 100vh;
+    transform: scale(1.5);
 }
 
 .jumbo-slider__slide--active .jumbo-slider__slide-bg {
@@ -150,5 +159,24 @@
 }
 
 .jumbo-slider__circle--filled {
+    background-color: #03fc7f;
+}
+
+.jumbo-slider__timeline {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 4;
+}
+
+.jumbo-slider__line {
+    height: 5px;
+    width: 0;
+    background-color: #ffffff;
+    transition: width 6s ease-in-out;
+}
+
+.jumbo-slider__slide--active .jumbo-slider__line {
+    width: 100%;
     background-color: #03fc7f;
 }
