@@ -9,6 +9,7 @@ let init = () => {
     // add amimation class to slide
     slides[0].classList.add("jumbo-slider__slide--active");
     links[current - 1].classList.add("jumbo-slider__link--active");
+    circles[current - 1].classList.add("jumbo-slider__circle--filled");
 
     // update elipsis links
     let updateNav = (current) => {
