@@ -13,7 +13,7 @@ let init = () => {
 
     // update elipsis links
     let updateNav = (current) => {
-        console.log(`current: ${current}`);
+        // console.log(`current: ${current}`);
         for (let index = 0; index < slides.length; index++) {
             links[index].classList.remove("jumbo-slider__link--active");
             circles[index].classList.remove("jumbo-slider__circle--filled");
@@ -24,18 +24,21 @@ let init = () => {
     let startSliding = () => {
         let test = 1;
         setInterval(() => {
-            console.log(`current: ${current}`);
+            // console.log(`current: ${current}`);
             slides[1].classList.add("jumbo-slider__slide--active");
             slides[0].classList.remove("jumbo-slider__slide--active");
+
+            container.appendChild(slides[0].cloneNode([true]));
+            container.removeChild(slides[0]);
+
             if (current < slides.length) {
                 current++;
                 updateNav(current);
             } else {
                 current = 1;
+                updateNav(current);
             }
-            container.appendChild(slides[0].cloneNode([true]));
-            container.removeChild(slides[0]);
-        }, 6000);
+        }, time);
     };
     startSliding();
 };
